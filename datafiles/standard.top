@@ -1,0 +1,8 @@
+#include "charmm36.ff/forcefield.itp"
+#include "TOP_STANDARD/CHL1.itp"
+
+[ system ]
+POPC / POPC+CHOL, STANDARD CHARMM36
+
+[ molecules ]
+CHL1  	           1

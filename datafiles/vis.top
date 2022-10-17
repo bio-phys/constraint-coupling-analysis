@@ -1,0 +1,8 @@
+#include "TOP_VIS/charmm36-nov2016.ff/forcefield.itp"
+#include "TOP_VIS/CHL1.itp"
+
+[ system ]
+POPC / POPC+CHOL, VIS CHARMM36
+
+[ molecules ]
+CHL1  	           1

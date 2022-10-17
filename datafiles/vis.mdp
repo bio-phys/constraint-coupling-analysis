@@ -1,0 +1,38 @@
+integrator              = md
+dt                      = 0.005
+nsteps                  = 20000000
+nstlog                  = 20000
+nstcalcenergy           = 100
+nstenergy               = 2000
+nstxout-compressed	= 20000
+nstvout			= 20000
+;
+cutoff-scheme           = Verlet
+nstlist                 = 10
+rlist                   = 1.2
+coulombtype             = pme
+rcoulomb                = 1.2
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw_switch             = 1.0
+rvdw                    = 1.2
+;
+tcoupl                  = Nose-Hoover
+tc_grps                 = System
+tau_t                   = 1.0
+ref_t                   = 298
+;
+pcoupl                  = Parrinello-Rahman
+pcoupltype              = semiisotropic
+tau_p                   = 5.0
+compressibility         = 4.5e-5 4.5e-5
+ref_p                   = 1.0 1.0
+;
+constraints             = all-bonds
+constraint_algorithm    = LINCS
+continuation            = yes
+;
+nstcomm                 = 100
+comm_mode               = linear
+
+
